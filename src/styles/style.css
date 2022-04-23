@@ -3,12 +3,11 @@
 :root {
     --header_bg: #f55a5a;
     --text_color: #2b283a;
-    --link_color: #918e9b;
+    --link_color: #716f79;
     --border-color: #f5f5f5;
 }
 
 * {
-    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
@@ -16,25 +15,25 @@
 }
 
 .navbar {
-    position: absolute;
-    width: 550px;
+    display: flex;
+    width: 100%;
     height: 55px;
     left: 0px;
     top: 0px;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
 
-    background: #F55A5A;
+    background: var(--header_bg);
 }
 
 .navbar p {
-    position: absolute;
-    width: 109px;
-    height: 16px;
-    left: 244px;
-    top: 20px;
+    display: flex;
+    align-self: center;
 
     font-style: normal;
     font-weight: 500;
-    font-size: 14.4608px;
+    font-size: 1em;
     line-height: 18px;
     letter-spacing: -0.075em;
 
@@ -42,12 +41,10 @@
 }
 
 .container {
-    display: block;
+    display: flex;
     margin: 30px 35px;
-}
-
-div.container>* {
-    padding: 20px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .item {
@@ -62,52 +59,50 @@ img {
 
 .location {
     color: var(--text_color);
-    font-size: 10px;
+    margin-left: 5px;
+    font-size: .9em;
+    font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-
-    border: 1px solid black;
 }
 
 div.section-right a {
     color: var(--link_color);
-    font-size: 10px;
+    font-size: .75em;
     margin-left: 15px;
 }
 
-h1 {
-    display: block;
-}
-
 .title {
-    font-size: 20px;
+    margin-left: 5px;
+    font-size: 1.2em;
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 10px;
     text-transform: capitalize;
 }
 
-div {
-    display: block;
-}
-
 .date {
-    font-size: 10px;
-    font-weight: 550;
-    margin-top: 20px;
+    font-size: .7em;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.date span {
+    font-size: 1.1em;
+    font-weight: 800;
 }
 
 .description {
     color: var(--text_color);
-    font-size: 10px;
-    margin-top: 11px;
-    width: 400px;
+    font-size: .95em;
+    font-weight: 600;
+    color: rgb(133, 133, 133);
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 50%;
+}
+
+.bi-geo-alt-fill {
+    color: var(--header_bg);
 }
